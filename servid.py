@@ -1,8 +1,8 @@
 
 # a biblioteca socket sera usada para conseguir enviar dados atraves da rede
 import socket
-# a biblitecate threading esta sendo usada para melhorar o tempo de resposta que as aplicaçoes aceitam entradas
-#usuario enquanto outras tarefas sao executadas em segundo plano
+#ermitem que múltiplas execuções ocorram no mesmo ambiente do aplicativo com
+# um grande grau de independência uma da outra
 import threading
 
 #o host vai identificar o computador na internet, e port o numero de porta tcp assciado ao protocolo
