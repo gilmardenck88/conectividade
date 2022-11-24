@@ -12,7 +12,7 @@ PORT = int(input("Port: "))
 #foi criado o tipo de transmissao que é sock stream que é basicamente tcp
 server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 #servidor de protocolo DNS
-server.bind((HOST,PORT))
+server.bind((HOST, PORT))
 #vai  iniciar o servidor para ouvir a conexão criptografada.
 server.listen()
 print(f'Server is Up and Listening on {HOST}:{PORT}')
