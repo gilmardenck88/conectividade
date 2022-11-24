@@ -11,7 +11,15 @@ client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 #o try abaixo foi criado para caso o cliente erre o ip , nao feche a aplicaçao
 #e sim exiba para ele a mensagem de erro para que corriga
 try:
+    nome = []
     username = input('Enter a username: ')
+    for letra in username:
+        nome.append(letra)
+    while(nome[0] == ' ') or (nome[0] == ''):
+        nome.clear()
+        username = input('Enter a username: ')
+        for letra in username:
+            nome.append(letra)
     client.connect((ServerIP,PORT))
     print(f'Connected Successfully to {ServerIP}:{PORT}')
 except:
